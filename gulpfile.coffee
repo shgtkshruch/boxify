@@ -23,8 +23,6 @@ gulp.task 'browser-sync', ->
     reloadDelay: 0
     browser: 'Google Chrome Canary'
 
-
-
 gulp.task 'html', ['jade'], ->
   assets = $.useref.assets()
   gulp.src config.dest + '/index.html'
@@ -54,7 +52,8 @@ gulp.task 'jade', ->
       stream: true
 
 gulp.task 'sass', ->
-    $.rubySass config.src + '/styles/style.scss'
+    $.rubySass config.src + '/styles/style.scss',
+      loadPath: 'bower_components/bootstrap-sass/assets/stylesheets/'
     .on 'error', (err) ->
       console.error 'Error!', err.message
     .pipe $.autoprefixer 'last 2 version', 'ie 9', 'ie 8'
