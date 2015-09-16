@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  padding: 20px 50px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all .5s;
+  &--white {
+    background-color: #fff;
+    color: $color-green;
+    &:hover {
+      background-color: $color-emerald-green;
+      color: #fff;
+    }
+  }
+  &--default {
+    padding: 18px 48px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    > i {
+      margin-left: 5px;
+    }
+    &:hover {
+      color: $color-emerald-green;
+      border-color: $color-emerald-green;
+    }
+  }
+  &--group > .btn + .btn {
+    margin-left: 15px;
+  }
+}

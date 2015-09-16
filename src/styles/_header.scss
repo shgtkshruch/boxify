@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  height: 800px;
+  padding-top: 60px;
+  color: #fff;
+  background-image: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  &__grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/grid.png');
+  }
+  &__copy {
+    margin-top: 200px;
+    margin-bottom: 45px;
+    font-size: 45px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,109 @@
+.gnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(52, 82, 113, 0.95);
+  transition: opacity .5s;
+  &.is_open {
+    visibility: visible;
+    opacity: 1;
+  }
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 265px;
+    text-align: center;
+    @media (min-width: 560px) {
+      width: 100%;
+    }
+    @media (min-width: 640px) {
+      width: 405px;
+    }
+    @media (min-width: 840px) {
+      width: 100%;
+    }
+  }
+  &__item {
+    display: inline-block;
+    transform: translateY(-80px);
+    transition: transform .5s;
+    .is_open & {
+      transform: translateY(0);
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          transition-delay: 0.05s * $i;
+        }
+      }
+    }
+    &:nth-child(1),
+    &:nth-child(3) {
+      margin-right: 20px;
+    }
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 20px;
+    }
+    @media (min-width: 560px) {
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    @media (min-width: 640px) {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin-right: 20px;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 20px;
+      }
+    }
+    @media (min-width: 840px) {
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__link {
+    display: block;
+    width: 120px;
+    padding: 20px 0;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .5s;
+    &:hover {
+      color: $color-emerald-green;
+      border-color: $color-emerald-green;
+    }
+    @media (min-width: 640px) {
+      width: 190px;
+      padding: 50px 0;
+    }
+  }
+  &__icon {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+}

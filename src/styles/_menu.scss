@@ -1,0 +1,46 @@
+.menu {
+  position: relative;
+  &__text {
+    margin-right: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__icon {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+    &,
+    &:before,
+    &:after {
+      width: 35px;
+      height: 5px;
+      background-color: #fff;
+      transition: transform .3s;
+    }
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+    &:before {
+      top: -10px;
+    }
+    &:after {
+      bottom: -10px;
+    }
+    &.is_open {
+      background-color: transparent;
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:after {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
