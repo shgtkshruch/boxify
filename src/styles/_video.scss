@@ -1,0 +1,17 @@
+.video {
+  &__link {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    transition: color .3s;
+    &:hover {
+      color: $color-emerald-green;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    color: inherit;
+    font-size: 50px;
+    vertical-align: middle;
+  }
+}

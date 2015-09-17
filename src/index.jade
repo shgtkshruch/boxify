@@ -12,14 +12,23 @@ html(lang="ja")
 
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Nunito:400,300' type="text/css")
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+
+    // build:css styles/vendor.css
+    link(rel='stylesheet', href='../bower_components/fancybox/source/jquery.fancybox.css', media='all')
+    // endbuild
+
     link(rel='stylesheet', href='styles/style.css', media='all')
   body
     include partials/header
 
+    include partials/about
+
     // build:js script/vendor.js
     script(src='../bower_components/jquery/dist/jquery.min.js')
+    script(src='../bower_components/fancybox/source/jquery.fancybox.js')
     // endbuild
 
     // build:js scripts/main.js
     script(src='scripts/gnav.js')
+    script(src='scripts/video.js')
     // endbuild
