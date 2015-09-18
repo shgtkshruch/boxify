@@ -1,0 +1,44 @@
+.intro {
+  &__img {
+    position: relative;
+    height: 400px;
+    background-image: url('../images/intro.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  &__main {
+    height: 100%;
+    padding: 10% 100px 10% 100px;
+    background-color: $color-blue;
+    @media (min-width: $screen-sm) {
+      height: 400px;
+    }
+  }
+  &__heading {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  &__text {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  &__link {
+    color: $color-emerald-green;
+  }
+  &__icon {
+    margin-left: 5px;
+  }
+}

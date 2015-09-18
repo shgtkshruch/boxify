@@ -1,0 +1,21 @@
+.flickity {
+  &-slider > li {
+    width: 100%;
+  }
+  &-page-dots {
+    position: static;
+    margin-top: 50px;
+    text-align: left;
+    > .dot {
+      width: 13px;
+      height: 13px;
+      background-color: transparent;
+      border: 2px solid #fff;
+      opacity: 1;
+      transition: background-color .3s;
+      &.is-selected {
+        background-color: #fff;
+      }
+    }
+  }
+}

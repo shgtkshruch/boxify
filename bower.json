@@ -16,6 +16,7 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "fancybox": "~2.1.5",
+    "flickity": "~1.1.1",
     "jquery": "~2.1.4"
   }
 }

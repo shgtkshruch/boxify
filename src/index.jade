@@ -15,6 +15,7 @@ html(lang="ja")
 
     // build:css styles/vendor.css
     link(rel='stylesheet', href='../bower_components/fancybox/source/jquery.fancybox.css', media='all')
+    link(rel='stylesheet', href='../bower_components/flickity/dist/flickity.min.css', media='all')
     // endbuild
 
     link(rel='stylesheet', href='styles/style.css', media='all')
@@ -22,13 +23,17 @@ html(lang="ja")
     include partials/header
 
     include partials/about
+    include partials/intro
+
 
     // build:js script/vendor.js
     script(src='../bower_components/jquery/dist/jquery.min.js')
     script(src='../bower_components/fancybox/source/jquery.fancybox.js')
+    script(src='../bower_components/flickity/dist/flickity.pkgd.min.js')
     // endbuild
 
     // build:js scripts/main.js
     script(src='scripts/gnav.js')
     script(src='scripts/video.js')
+    script(src='scripts/flickity.js')
     // endbuild
