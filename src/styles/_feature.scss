@@ -1,0 +1,53 @@
+.feature {
+  &:not(:last-child) {
+    margin-bottom: 50px;
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    line-height: 90px;
+    border: 2px solid $color-green;
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    @media (min-width: $screen-sm) {
+      display: inline-block;
+      margin-right: 25px;
+      vertical-align: top;
+    }
+    > i {
+      color: $color-green;
+    }
+  }
+  &__body {
+    text-align: center;
+    color: $color-black;
+    @media (min-width: $screen-sm) {
+      display: inline-block;
+      width: calc(100% - 120px);
+      text-align: left;
+    }
+  }
+  &__heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  &__text {
+    margin-bottom: 15px;
+    color: $color-gray;
+    font-size: 14px;
+  }
+  &__link {
+    color: $color-black;
+    text-transform: uppercase;
+  }
+  &__link-icon {
+    margin-left: 5px;
+  }
+}

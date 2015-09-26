@@ -1,0 +1,14 @@
+- features = [{icon: 'desktop', heading: 'Responsive', text: "Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap."}, {icon: 'flash', heading: 'Multi-Purpose', text: "Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income."}, {icon: 'heart', heading: 'Absolutely Free', text: "As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me."}]
+section.section--features#feature
+  .container
+    .row
+      each feature, i in features
+        .col-xs-12.col-sm-10.col-sm-offset-1.col-md-offset-0.col-md-4.feature
+          .feature__icon
+            i(class="fa fa-#{feature.icon}")
+          .feature__body
+            h2.feature__heading= feature.heading
+            p.feature__text= feature.text
+            a.feature__link(href="#")
+              | Read More
+              i.fa.fa-chevron-circle-right.feature__link-icon
