@@ -1,0 +1,26 @@
+.showcase {
+  color: #fff;
+  &__heading {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  &__text {
+    margin-bottom: 40px;
+  }
+  &__avatar {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  &__blockquote-text {
+    display: inline-block;
+    width: calc(100% - 90px);
+    margin-bottom: 25px;
+    font-style: italic;
+  }
+  &__codrops {
+    display: inline-block;
+    margin-bottom: 50px;
+    margin-left: 90px;
+  }
+}

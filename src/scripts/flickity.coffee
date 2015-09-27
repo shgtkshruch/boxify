@@ -1,4 +1,4 @@
-$ '#js-intro-slider'
+$ '#js-intro-slider, #js-device-slider'
   .flickity
     cellAlign: 'left'
     contain: true

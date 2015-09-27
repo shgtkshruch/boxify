@@ -1,0 +1,22 @@
+.device {
+  position: absolute;
+  top: -3px;
+  width: 359px;
+  height: 676px;
+  background-image: url('../images/iphone-skeleton.png');
+  background-repeat: no-repeat;
+  @media (min-width: $screen-lg) {
+    top: -45px;
+    left: 110px;
+  }
+  &__inner,
+  &__img {
+    width: 247px;
+    height: 445px;
+  }
+  &__inner {
+    position: absolute;
+    top: 115px;
+    left: 56px;
+  }
+}

@@ -3,9 +3,14 @@
     width: 100%;
   }
   &-page-dots {
-    position: static;
-    margin-top: 50px;
-    text-align: left;
+    .intro & {
+      position: static;
+      margin-top: 50px;
+      text-align: left;
+    }
+    .device & {
+      bottom: 20px;
+    }
     > .dot {
       width: 13px;
       height: 13px;

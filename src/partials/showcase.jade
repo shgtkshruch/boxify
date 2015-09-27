@@ -1,0 +1,21 @@
+section.section--showcase
+  .texture-overlay
+  .container
+    .row
+      .hidden-xs.hidden-sm.col-md-6
+        .device
+          ul.device__inner#js-device-slider
+            - for (var i = 0; i < 3; i++)
+              li
+                img.device__img(src="images/screen#{i+1}.jpg" alt="")
+      .col-xs-offset-1.col-xs-10.col-md-offset-0.col-md-6.showcase
+        h2.showcase__heading Showcase your Product or Service
+        p.showcase__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        blockquote.showcase__blockquote
+          img.showcase__avatar(src="images/avatar.png" alt="User Avatar")
+          p.showcase__blockquote-text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc." - Peter Finlan
+          a.showcase__codrops(href="http://tympanus.net/codrops/")
+            img(src="images/codrops-logo.png" alt="Codrops Logo")
+        a.btn.btn--default(href="http://tympanus.net/codrops/?p=22554")
+          | Download!
+          i.fa.fa-download
