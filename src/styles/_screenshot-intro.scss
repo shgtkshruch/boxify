@@ -1,0 +1,18 @@
+.screenshot-intro {
+  &__heading {
+    margin-bottom: 20px;
+    color: #24374b;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  &__text {
+    margin-bottom: 25px;
+    color: #778899;
+  }
+  &__link {
+    color: #73d0da;
+  }
+  &__icon {
+    margin-left: 5px;
+  }
+}
