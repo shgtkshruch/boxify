@@ -1,0 +1,13 @@
+section
+  .container-fluid
+    .row
+      ul
+        - figures = [{caption: 'Optimised For Design'}, {caption: 'User Centric Design'}, {caption: 'Responsive and Adaptive'}, {caption: 'Absolutely Free'}, {caption: 'Multi-Purpose Design'}, {caption: 'Exclusive to Codrops'}, {caption: 'Made with Love'}, {caption: 'In Sydney, Australia'}]
+        each figure, i in figures
+          li.col-xs-12.col-sm-6.col-md-3.nopadding
+            figure.screenshot
+              img.screenshot__img(src="images/screenshot-#{i+1}.jpg" alt="")
+              figcaption.screenshot__caption
+                a.screenshot__link.js-screenshot__link(href="images/screenshot-large-#{i+1}.jpg")
+                  i.fa.fa-search.screenshot__icon
+                  | #{figure.caption}
