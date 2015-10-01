@@ -1,0 +1,17 @@
+footer.footer
+  .container
+    .row
+      .col-xs-12.col-sm-12.col-md-5
+        h2.footer__logo
+          img(src="images/logo-blue.png" alt="Boxify")
+        p.footer__text
+          | &copy; Boxify 2015 -&nbsp;
+          a(href="http://tympanus.net/codrops/licensing/") Licence&nbsp;
+          | - Designed & Developed by&nbsp
+          a(href="http://www.peterfinlan.com/") Peter Finlan
+      .col-xs-12.col-sm-12.col-md-7
+        nav.nav
+          ul
+            each list, i in ['about', 'feature', 'screenshot', 'download']
+              li.nav__item
+                a(href="##{list}")= list

@@ -1,0 +1,27 @@
+.nav {
+  margin-top: 30px;
+  overflow: hidden;
+  &__item {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #c7cacc;
+    text-transform: uppercase;
+    > a {
+      display: block;
+      color: $color-blue;
+      &:hover {
+        color: $color-emerald-green;
+      }
+    }
+    @media (min-width: $screen-sm) {
+      float: left;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+}
