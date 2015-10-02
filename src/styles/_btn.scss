@@ -26,6 +26,8 @@
     }
   }
   &--group > .btn + .btn {
-    margin-left: 15px;
+    @media (min-width: $screen-sm) {
+      margin-left: 15px;
+    }
   }
 }

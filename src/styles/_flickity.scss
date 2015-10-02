@@ -5,8 +5,10 @@
   &-page-dots {
     .intro & {
       position: static;
-      margin-top: 50px;
       text-align: left;
+      @media (min-width: $screen-md) {
+        margin-top: 50px;
+      }
     }
     .device & {
       bottom: 20px;

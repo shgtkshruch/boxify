@@ -18,9 +18,12 @@
     background-size: cover;
   }
   &--screenshot-intro {
-    padding-top: 170px;
+    padding-top: 110px;
     padding-bottom: 100px;
     background-color: #f6f7f9;
+    @media (min-width: $screen-md) {
+      padding-top: 170px;
+    }
   }
   &--download {
     padding-top: 120px;

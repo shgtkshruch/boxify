@@ -17,10 +17,11 @@
   }
   &__main {
     height: 100%;
-    padding: 10% 100px 10% 100px;
+    padding: 15% 25px 15% 25px;
     background-color: $color-blue;
-    @media (min-width: $screen-sm) {
+    @media (min-width: $screen-md) {
       height: 400px;
+      padding: 10% 100px 10% 100px;
     }
   }
   &__heading {
