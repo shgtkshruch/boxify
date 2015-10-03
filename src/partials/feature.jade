@@ -1,9 +1,9 @@
-- features = [{icon: 'desktop', heading: 'Responsive', text: "Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap."}, {icon: 'flash', heading: 'Multi-Purpose', text: "Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income."}, {icon: 'heart', heading: 'Absolutely Free', text: "As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me."}]
+- features = [{class: '',icon: 'desktop', heading: 'Responsive', text: "Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap."}, {class: 'delay-05s', icon: 'flash', heading: 'Multi-Purpose', text: "Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income."}, {class: 'delay-1s', icon: 'heart', heading: 'Absolutely Free', text: "As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me."}]
 section.section--features#feature
   .container
     .row
       each feature, i in features
-        .col-xs-12.col-sm-12.col-md-4.feature
+        .col-xs-12.col-sm-12.col-md-4.feature.js-wp2.waypoints(class="#{feature.class}")
           .feature__icon
             i(class="fa fa-#{feature.icon}")
           .feature__body
