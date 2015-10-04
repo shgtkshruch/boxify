@@ -19,6 +19,7 @@
     "fancybox": "~2.1.5",
     "flickity": "~1.1.1",
     "jquery": "~2.1.4",
-    "waypoints": "~4.0.0"
+    "waypoints": "~4.0.0",
+    "jquery-smooth-scroll": "~1.5.6"
   }
 }
