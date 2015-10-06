@@ -2,7 +2,6 @@ node_modules
 .sass-cache
 dist
 bower_components/jquery/
-bower_components/fancybox/
 bower_components/flickity/
 bower_components/waypoints/
 bower_components/animate.css/
